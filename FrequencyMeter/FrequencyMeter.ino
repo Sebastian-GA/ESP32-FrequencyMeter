@@ -120,7 +120,7 @@ void setup_counter(void)
     pcnt_config.channel = PCNT_COUNT_CHANNEL;
     pcnt_config.counter_h_lim = PCNT_H_LIM_VAL;
     pcnt_config.pos_mode = PCNT_COUNT_INC;
-    pcnt_config.neg_mode = PCNT_COUNT_INC;
+    pcnt_config.neg_mode = PCNT_COUNT_INC;  // TODO: Replace with PCNT_COUNT_DIS; this prevents to count falling edges
     pcnt_config.lctrl_mode = PCNT_MODE_DISABLE;
     pcnt_config.hctrl_mode = PCNT_MODE_KEEP;
     pcnt_unit_config(&pcnt_config);
